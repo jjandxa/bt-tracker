@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.209:3306/bt-tracker?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: '000000'
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  servlet:
+    context-path: /bt-tracker
+system:
+  torrents-path: D:\torrents
+logging:
+  file: bt-tracker.log
